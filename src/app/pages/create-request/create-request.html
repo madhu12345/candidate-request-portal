@@ -1,0 +1,38 @@
+<div class="container mt-5">
+
+    <div class="card shadow p-4">
+
+        <h3>Raise Request</h3>
+
+        <form [formGroup]="requestForm" (ngSubmit)="submitRequest()">
+
+            <div class="mb-3">
+                <label>Title</label>
+
+                <input
+                    class="form-control"
+                    formControlName="title">
+            </div>
+
+            <div class="mb-3">
+
+                <label>Description</label>
+
+                <textarea
+                    rows="4"
+                    class="form-control"
+                    formControlName="description">
+                </textarea>
+
+            </div>
+
+            <button
+                class="btn btn-primary">
+                Submit
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
